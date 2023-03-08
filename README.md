@@ -2,6 +2,7 @@
 Klasifikasi Hepatitis Dengan Imputasi MissForest Menggunakan Mixed Naive Bayes
 
 API
+
 classmixed_naive_bayes.MixedNB(categorical_features=None, max_categories=None, alpha=0.5, priors=None, var_smoothing=1e-09)
 Naive Bayes classifier for Categorical and Gaussian models.
 
