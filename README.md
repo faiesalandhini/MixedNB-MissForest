@@ -3,7 +3,8 @@ Klasifikasi Hepatitis Dengan Imputasi MissForest Menggunakan Mixed Naive Bayes
 
 API
 
-classmixed_naive_bayes.MixedNB(categorical_features=None, max_categories=None, alpha=0.5, priors=None, var_smoothing=1e-09)
+class mixed_naive_bayes.MixedNB(categorical_features=None, max_categories=None, alpha=0.5, priors=None, var_smoothing=1e-09)
+
 Naive Bayes classifier for Categorical and Gaussian models.
 
 Note: When using categorical_features, MixedNB expects that for each feature, all possible classes are captured in the trining data X in the mixed_naive_bayes.mixed_naive_bayes.MixedNB.fit method. This is to ensure numerical stability.
@@ -21,49 +22,49 @@ priors (array-like, size (num_classes,), optional (default=None)) – Prior prob
 
 var_smoothing (float, optional (default=1e-9)) – Portion of the largest variance of all features that is added to variances for calculation stability.
 
-priors
+priors
 probability of each class.
 
 Type
 array, shape (num_classes,)
 
-epsilon
+epsilon
 absolute additive value to variances
 
 Type
 float
 
-num_samples
+num_samples
 number of training samples
 
 Type
 int
 
-categorical_features
+categorical_features
 number of classes (number of layes of y)
 
 Type
 int
 
-gaussian_features
+gaussian_features
 the distribution for every feature and class
 
 Type
 array, shape (num_classes,)
 
-categorical_posteriors
+categorical_posteriors
 the distribution of the categorical features
 
 Type
 array
 
-theta
+theta
 the mean of the gaussian features
 
 Type
 array
 
-sigma
+sigma
 the variance of the gaussian features
 
 Type
